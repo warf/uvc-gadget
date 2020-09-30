@@ -2043,8 +2043,8 @@ static void usage(const char *argv0)
             "1 = USER_PTR\n");
     fprintf(stderr,
             " -r <resolution> Select frame resolution:\n\t"
-            "0 = %sp, (%sx%s)\n\t"
-            "1 = %sp, (%sx%s)\n", HEIGHT1, WIDTH1, HEIGHT1,
+            "0 = %dp, (%dx%d)\n\t"
+            "1 = %dp, (%dx%d)\n", HEIGHT1, WIDTH1, HEIGHT1,
             HEIGHT2, WIDTH2, HEIGHT2);
     fprintf(stderr,
             " -s <speed>	Select USB bus speed (b/w 0 and 2)\n\t"
