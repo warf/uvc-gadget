@@ -1,4 +1,4 @@
-UVC gadget test application Readme
+## UVC Gadget Application for Pi Webcam
 
 Copyright (C) 2010 Ideas on board SPRL
 Copyright (C) 2013 ST Microelectronics Ltd.
@@ -9,6 +9,10 @@ Bhupesh Sharma <bhupesh.sharma@st.com>
 
 Introduction
 ============
+
+> **TODO**: This README needs to be subsumed into the main README at some point.
+>
+> – geerlingguy
 
 This README file documents the UVC gadget test application available
 here git://git.ideasonboard.org/uvc-gadget.git, which can be used to

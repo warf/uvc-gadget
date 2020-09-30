@@ -1,5 +1,13 @@
 ## uvc-gadget
 
+> **NOTE**: This repository was originally forked from https://github.com/climberhunt/uvc-gadget, which itself was forked from https://github.com/wlhe/uvc-gadget, which is a fork from the original project... so it's a little bit of a mess here. Anyways, this little aside at the top of the README is the only bit that I have updated in the README so far.
+>
+> To be perfectly honest, I am still trying to learn the ins-and-outs of uvc-gadget and OTG usage before I feel confident enough to make the README actually comprehensible to humans who are not neck-deep in this stuff. I love good documentation, but I hate misleading or hard-to-read documentation.
+>
+> Anyways, check out https://github.com/geerlingguy/pi-webcam for the downstream and user-friendly usage of this project.
+>
+> – geerlingguy
+
 **Upstream project [uvc-gadget](http://git.ideasonboard.org/uvc-gadget.git) has been updated and continuous maintenance**
 
 **Please refer to http://git.ideasonboard.org/uvc-gadget.git**
