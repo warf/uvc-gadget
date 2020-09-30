@@ -2043,8 +2043,9 @@ static void usage(const char *argv0)
             "1 = USER_PTR\n");
     fprintf(stderr,
             " -r <resolution> Select frame resolution:\n\t"
-            "0 = HEIGHT1p, (WIDTH1xHEIGHT1)\n\t"
-            "1 = HEIGHT2p, (WIDTH2xHEIGHT2)\n");
+            "0 = %sp, (%sx%s)\n\t"
+            "1 = %sp, (%sx%s)\n", HEIGHT1, WIDTH1, HEIGHT1,
+            HEIGHT2, WIDTH2, HEIGHT2);
     fprintf(stderr,
             " -s <speed>	Select USB bus speed (b/w 0 and 2)\n\t"
             "0 = Full Speed (FS)\n\t"
@@ -2071,7 +2072,7 @@ int main(int argc, char *argv[])
     int dummy_data_gen_mode = 0;
     /* Frame format/resolution related params. */
     int default_format = 0;     /* V4L2_PIX_FMT_YUYV */
-    int default_resolution = 0; /* VGA HEIGHT1p */
+    int default_resolution = 0; /* 720p */
     int nbufs = 2;              /* Ping-Pong buffers */
     /* USB speed related params */
     int mult = 0;
