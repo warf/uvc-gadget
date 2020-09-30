@@ -6,6 +6,8 @@
 >
 > Anyways, check out https://github.com/geerlingguy/pi-webcam for the downstream and user-friendly usage of this project.
 >
+> The main thing is you can choose once (for now) between 720p or 1080p when you set this up—the project currently defaults to 720p, but if you want to switch to 1080p, then BEFORE you run this stuff, find the code with 'For 720p' and comment those parts out, and find the code with 'For 1080p' and uncomment those parts. I hope to make this all so much simpler in the future, allowing easier selection.
+>
 > – geerlingguy
 
 **Upstream project [uvc-gadget](http://git.ideasonboard.org/uvc-gadget.git) has been updated and continuous maintenance**
