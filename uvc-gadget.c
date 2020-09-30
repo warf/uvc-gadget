@@ -39,8 +39,8 @@
 #include "uvc.h"
 
 
-#define WIDTH1  640
-#define HEIGHT1 360
+#define WIDTH1  1280
+#define HEIGHT1 720
 
 #define WIDTH2	1920
 #define HEIGHT2 1080
@@ -2043,8 +2043,8 @@ static void usage(const char *argv0)
             "1 = USER_PTR\n");
     fprintf(stderr,
             " -r <resolution> Select frame resolution:\n\t"
-            "0 = HEIGHT1p, VGA (WIDTH1xHEIGHT1)\n\t"
-            "1 = 720p, (WIDTH2xHEIGHT2)\n");
+            "0 = HEIGHT1p, (WIDTH1xHEIGHT1)\n\t"
+            "1 = HEIGHT2p, (WIDTH2xHEIGHT2)\n");
     fprintf(stderr,
             " -s <speed>	Select USB bus speed (b/w 0 and 2)\n\t"
             "0 = Full Speed (FS)\n\t"
