@@ -2,13 +2,13 @@
 Description=Pi webcam
 
 [Service]
-ExecStart=/home/pi/uvc-gadget/piwebcam
+ExecStart={{ uvc_gadget_directory }}/piwebcam
 StandardOutput=syslog
 StandardError=syslog
 SyslogIdentifier=piwebcam
-User=pi
+User={{ ansible_user }}
 Group=pi
-WorkingDirectory=/home/pi/uvc-gadget/
+WorkingDirectory={{ uvc_gadget_directory }}/
 
 [Install]
 WantedBy=basic.target
