@@ -12,4 +12,4 @@ sudo /home/pi/uvc-gadget/multi-gadget.sh
 # For 720p:
 sudo /home/pi/uvc-gadget/uvc-gadget -f1 -s1 -r0 -u /dev/video1 -v /dev/video0
 # For 1080p:
-# sudo /home/pi/uvc-gadget/uvc-gadget -f1 -s1 -r1 -u /dev/video1 -v /dev/video0
+#sudo /home/pi/uvc-gadget/uvc-gadget -f1 -s1 -r1 -u /dev/video1 -v /dev/video0

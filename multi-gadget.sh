@@ -15,10 +15,10 @@ mkdir /sys/kernel/config/usb_gadget/pi4/strings/0x409
 echo 100000000d2386db > /sys/kernel/config/usb_gadget/pi4/strings/0x409/serialnumber
 echo "Samsung" > /sys/kernel/config/usb_gadget/pi4/strings/0x409/manufacturer
 echo "Pi Webcam" > /sys/kernel/config/usb_gadget/pi4/strings/0x409/product
-mkdir /sys/kernel/config/usb_gadget/pi4/configs/c.2
-mkdir /sys/kernel/config/usb_gadget/pi4/configs/c.2/strings/0x409
-echo 500 > /sys/kernel/config/usb_gadget/pi4/configs/c.2/MaxPower
-echo "UVC" > /sys/kernel/config/usb_gadget/pi4/configs/c.2/strings/0x409/configuration
+mkdir /sys/kernel/config/usb_gadget/pi4/configs/c.1
+mkdir /sys/kernel/config/usb_gadget/pi4/configs/c.1/strings/0x409
+echo 500 > /sys/kernel/config/usb_gadget/pi4/configs/c.1/MaxPower
+echo "UVC" > /sys/kernel/config/usb_gadget/pi4/configs/c.1/strings/0x409/configuration
 
 mkdir /sys/kernel/config/usb_gadget/pi4/functions/uvc.usb0
 mkdir /sys/kernel/config/usb_gadget/pi4/functions/acm.usb0
@@ -28,7 +28,7 @@ ln -s /sys/kernel/config/usb_gadget/pi4/functions/uvc.usb0/control/header/h /sys
 # For 720p:
 mkdir -p /sys/kernel/config/usb_gadget/pi4/functions/uvc.usb0/streaming/mjpeg/m/720p
 cat <<EOF > /sys/kernel/config/usb_gadget/pi4/functions/uvc.usb0/streaming/mjpeg/m/720p/dwFrameInterval
-5000000
+333333
 EOF
 cat <<EOF > /sys/kernel/config/usb_gadget/pi4/functions/uvc.usb0/streaming/mjpeg/m/720p/wWidth
 1280
@@ -49,7 +49,7 @@ EOF
 # For 1080p:
 # mkdir -p /sys/kernel/config/usb_gadget/pi4/functions/uvc.usb0/streaming/mjpeg/m/1080p
 # cat <<EOF > /sys/kernel/config/usb_gadget/pi4/functions/uvc.usb0/streaming/mjpeg/m/1080p/dwFrameInterval
-# 5000000
+# 333333
 # EOF
 # cat <<EOF > /sys/kernel/config/usb_gadget/pi4/functions/uvc.usb0/streaming/mjpeg/m/1080p/wWidth
 # 1920
@@ -76,7 +76,7 @@ cd ../../class/hs
 ln -s ../../header/h
 cd ../../../../..
 
-ln -s /sys/kernel/config/usb_gadget/pi4/functions/uvc.usb0 /sys/kernel/config/usb_gadget/pi4/configs/c.2/uvc.usb0
-ln -s /sys/kernel/config/usb_gadget/pi4/functions/acm.usb0 /sys/kernel/config/usb_gadget/pi4/configs/c.2/acm.usb0
+ln -s /sys/kernel/config/usb_gadget/pi4/functions/uvc.usb0 /sys/kernel/config/usb_gadget/pi4/configs/c.1/uvc.usb0
+ln -s /sys/kernel/config/usb_gadget/pi4/functions/acm.usb0 /sys/kernel/config/usb_gadget/pi4/configs/c.1/acm.usb0
 udevadm settle -t 5 || :
 ls /sys/class/udc > /sys/kernel/config/usb_gadget/pi4/UDC
